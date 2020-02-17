@@ -1,18 +1,28 @@
+import { statement } from "@babel/template";
 
 export const initialState = {
-    todos: [
-        {
-            item: 'Finish Project',
-            completed: false,
-            id: 0
-        },
-        {
-            item: 'Eat fav snack',
-            completed: false,
-            id: 1
-        }
-    ]
-}
-export const reducter = () =>{
+  tasks: [
+    {
+      item: "Finish Project",
+      completed: false,
+      id: Date.now()
+    },
+    {
+      item: "Eat fav snack",
+      completed: false,
+      id: Date.now()
+    }
+  ]
+};
+export const reducter = () => {
+    switch(Action.type){
+        case 'ADD_TODO':{
 
-}
+        };
+        case 'DELETE_TODO':{
+
+        };
+        default:
+        return state;
+    }
+};
