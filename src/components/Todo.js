@@ -10,7 +10,9 @@ const Todo = props => {
         <div>
         {props.state.map(newTodo =>{
             return (
-            <div key={newTodo.id} className={`newTodo${newTodo.completed ? 'completed' : ''}`} onClick={()=> done(newTodo.id)}>
+            <div
+            onClick={()=> done(newTodo.id)}
+            key={newTodo.id} className={`${newTodo.completed ? 'completed' : ''}`}>
             <p>{newTodo.item}</p>
             </div>
         )})}
