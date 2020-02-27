@@ -3,7 +3,7 @@
     "name": "reducer-todo",
     "builds": [
       { 
-       "src": "project-name/package.json", 
+       "src": "reducer-todo/package.json", 
        "use": "@now/static-build", 
        "config": {
           "distDir": "build"
